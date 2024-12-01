@@ -8,7 +8,7 @@ import lombok.*;
 @Data
 @Builder
 @Entity
-@Table(name = "users", schema = "user_service")
+@Table(name = "users", schema = "user_service_schema")
 public class users {
     @Id
     private int id;
