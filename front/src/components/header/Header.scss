@@ -1,19 +1,64 @@
 .header {
     min-height: 151px;
     display: flex;
+    margin: 0 auto;
+    width: 1401px;
+    position: relative;
+    align-items: center;
     &-auth {
+        position: absolute;
+        right: 75px;
+        text-decoration: none;
+        cursor: pointer;
         &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
             background: rgb(77, 83, 232);
-            width: 170px;
+            min-width: 170px;
             height: 47px;
             border-radius: 10px;
             border: none;
+            color: rgb(255, 255, 255);
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: center;
             
         }
     }
+    &-wrap {
+        width: 995px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-.contact-info {
-    width: 635px;
-    display: flex;
+.contact{
+    &-info {
+        width: 635px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item{
+        display: flex;
+        gap: 10px;
+        font-size: 12px;
+        color: rgb(77, 83, 232);
+        font-family: Rubik;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0%;
+        text-align: left;
+        p {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
 }
