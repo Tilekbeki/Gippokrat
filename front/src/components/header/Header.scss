@@ -1,0 +1,19 @@
+.header {
+    min-height: 151px;
+    display: flex;
+    &-auth {
+        &__btn {
+            background: rgb(77, 83, 232);
+            width: 170px;
+            height: 47px;
+            border-radius: 10px;
+            border: none;
+            
+        }
+    }
+}
+
+.contact-info {
+    width: 635px;
+    display: flex;
+}

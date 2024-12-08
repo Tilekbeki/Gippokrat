@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MainPage from './components/pages/MainPage';
+import AuthPage from './components/pages/AuthPage';
+// const Page404 = lazy(() => import('../pages/404'));
+// const MainPage = lazy(() => import('../pages/MainPage'));
+// const ComicsPage = lazy(() => import('../pages/ComicsPage'));
+// const SingleComicLayout = lazy(() => import('../pages/singleComicLayout/SingleComicLayout'));
+// const SingleCharacterLayout = lazy(() => import('../pages/singleCharacterLayout/SingleCharacterLayout'));
+// const SinglePage = lazy(() => import('../pages/SinglePage'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+            <div className="app">
+                <main>
+                        <Routes>
+                            <Route path="/" element={<MainPage/>} />
+                            <Route path='/login' element={<AuthPage/>}/>
+                        </Routes>
+                </main>
+            </div>
+        </Router>
   );
 }
 
