@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
+}
+
+
+body {
+  overflow: hidden;
 }

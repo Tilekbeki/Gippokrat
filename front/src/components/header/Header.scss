@@ -1,11 +1,13 @@
 .header {
     min-height: 151px;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 1401px;
     position: relative;
     align-items: center;
     &-auth {
+        top: 43px;
         position: absolute;
         right: 75px;
         text-decoration: none;
@@ -58,7 +60,43 @@
         p {
             a {
                 text-decoration: none;
+                font-weight: 500;
+                &:hover{
+                    color: rgb(77, 83, 232);
+                    text-decoration: underline;
+                }
             }
         }
     }
 }
+
+nav {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(227, 246, 255);
+    padding: 25px 0;
+    .header {
+        &-menu {
+            display: flex;
+            color: rgb(28, 28, 28);
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0%;
+            text-align: left;
+            list-style: none;
+            justify-content: space-between;
+            a {
+                text-decoration: none;
+                color: rgb(28, 28, 28);
+            }
+        }
+        &-submenu {
+            display: none;
+        }
+    }
+}
+// .menu-item_active{
+//     text-decoration: underline;
+// }
