@@ -4,6 +4,8 @@ import Phone from '../../resources/icons/phone.svg';
 import Clock from '../../resources/icons/clock.svg';
 import Location from '../../resources/icons/location.svg';
 import User from '../../resources/icons/user.svg';
+import { NavLink } from 'react-router-dom';
+
 
 const Header = () => {
     return (
@@ -26,7 +28,7 @@ const Header = () => {
                 </div>
 
             </div>
-            <a href="http://stackoverflow.com" className='header-auth'><button className='header-auth__btn'><span>Войти как врач</span> <img src={User} alt="Иконка человека" /></button></a>
+            <NavLink to="/login" className='header-auth'><button className='header-auth__btn'><span>Войти как врач</span> <img src={User} alt="Иконка человека" /></button></NavLink>
             <nav>
                 <div>
                     <ul class="header-menu">

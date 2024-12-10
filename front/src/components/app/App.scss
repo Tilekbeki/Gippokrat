@@ -11,7 +11,18 @@
   margin: 0 auto;
 }
 
-
-body {
-  overflow: hidden;
+.title {
+  font-family: Rubik;
+    font-size: 35px;
+  &_h2{
+    color: rgb(77, 83, 232);
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  &_center {
+    text-align: center;
+  }
 }
