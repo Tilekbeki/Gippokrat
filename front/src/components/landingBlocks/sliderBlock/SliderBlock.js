@@ -8,7 +8,7 @@ const SliderBlock = () => {
                     <div className="slider-item">
                         <div className="slider-item__title">Грамотные взрослые <br/>и детские стоматологи</div>
                         <div className="slider-item__info">
-                            <div className="slider-info__btn">Подробнее</div>
+                            <button className="slider-info__btn">Подробнее</button>
                             <div className="controller">
                                 <div className="controller-prev"><img src={arrow} /></div>
                                 <div className="controller-next"><img src={arrow} /></div>

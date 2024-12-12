@@ -1,3 +1,79 @@
 .service {
     padding: 80px 0 40px 0;
+    &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &-item {
+        width: 270px;
+        padding: 17px 20px 17px 20px;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgb(164, 167, 245);
+        border-radius: 10px;
+        p {
+            color: rgb(77, 83, 232);
+            font-family: Rubik;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        
+    }
+}
+.service-item::before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+}
+/* Иконки для каждого пункта */
+.service-item[data-icon="diagnostic"]::before {
+    width: 41px;
+    height: 41px;
+    background: url('../../../resources/icons/diagnostic-icon.svg') center center/cover no-repeat;
+}
+.service-item[data-icon="doctor"]::before {
+    width: 41px;
+    height: 41px;
+    background: url('../../../resources/icons/appointment-icon.svg') center center/cover no-repeat;
+}
+
+.service-item[data-icon="programs"]::before {
+    width: 66px;
+    height: 41px;
+    background: url('../../../resources/icons/complex-program-icon.svg') center center/cover no-repeat;
+}
+
+.service-item[data-icon="analysis"]::before {
+    width: 38px;
+    height: 41px;
+    background: url('../../../resources/icons/analyses-icon.svg') center center/cover no-repeat;
+}
+
+.service-item[data-icon="medical-certificates"]::before {
+    width: 65px;
+    height: 41px;
+    background: url('../../../resources/icons/medicine-certificates-icon.svg') center center/cover no-repeat;
+}
+
+.service-item[data-icon="day-hospital"]::before {
+    width: 49px;
+    height: 41px;
+    background: url('../../../resources/icons/day-hospital-icon.svg') center center/cover no-repeat;
+}
+
+.service-item[data-icon="procedure-room"]::before {
+    width: 54px;
+    height: 41px;
+    background: url('../../../resources/icons/treatment-room-icon.svg') center center/cover no-repeat;
+}
+
+.service-item[data-icon="surgery"]::before {
+    width: 36px;
+    height: 41px;
+    background: url('../../../resources/icons/surgery-icon.svg') center center/cover no-repeat;
 }
