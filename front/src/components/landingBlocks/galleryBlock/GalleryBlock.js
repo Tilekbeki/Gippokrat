@@ -3,7 +3,7 @@ import "./GalleryBlock.scss"
 const GalleryBlock = () => {
     return(
         <section className="gallery">
-            <h2 className="title title_h2">О клинике</h2>
+            <h2 className="title title_h2">Галерея</h2>
         </section>
     )
 }
