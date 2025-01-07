@@ -1,7 +1,8 @@
 import './App.scss';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainPage from '../pages/MainPage';
-import AuthPage from '../pages/AuthPage'
+import AuthPage from '../pages/AuthPage';
+
 // const Page404 = lazy(() => import('../pages/404'));
 // const MainPage = lazy(() => import('../pages/MainPage'));
 // const ComicsPage = lazy(() => import('../pages/ComicsPage'));

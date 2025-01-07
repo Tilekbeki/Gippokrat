@@ -2,7 +2,7 @@ import "./ReasonsBlock.scss";
 const ReasonsBLock = () => {
     return(
         <section className="reasons">
-            <h2 className="title title_h2">Почему именно к нам?</h2>
+            <h2 className="title title_h2 title_center">Почему именно к нам?</h2>
             <div className="container">
                 <div className="reasons-wrap">
                     <div className="reason-item">

@@ -5,6 +5,8 @@ import ReasonsBLock from "../landingBlocks/reasonsBlock/ReasonsBlock";
 import AboutBlock from "../landingBlocks/aboutBlock/AboutBLock"
 import VideoBlock from "../landingBlocks/videoBlock/VideoBlock";
 import GalleryBlock from "../landingBlocks/galleryBlock/GalleryBlock";
+import EmployeesBlock from "../landingBlocks/employeesBlock/EmployeesBlock";
+import ReviewsBlock from "../landingBlocks/reviewsBlock/ReviewsBlock";
 
 const MainPage = () => {
     return(
@@ -16,6 +18,8 @@ const MainPage = () => {
             <VideoBlock/>
             <AboutBlock/>
             <GalleryBlock/>
+            <EmployeesBlock/>
+            <ReviewsBlock/>
             <h1>Main Page</h1>
         </>
     )

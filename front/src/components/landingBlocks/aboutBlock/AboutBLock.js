@@ -4,7 +4,7 @@ import doctorImg from "../../../resources/files/firstdocrot.png"
 const AboutBlock = () => {
     return (
         <section className="about">
-            <h2 className="title title_h2">О клинике</h2>
+            <h2 className="title title_h2 title_center">О клинике</h2>
             <div className="container">
                 <div className="about-wrap">
                     <div className="about-item">
