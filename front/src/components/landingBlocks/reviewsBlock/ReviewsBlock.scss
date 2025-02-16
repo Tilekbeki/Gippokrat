@@ -1,0 +1,56 @@
+.reviews {
+    padding: 45px 0 90px 0;
+    &-list {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+}
+
+.review {
+    box-sizing: border-box;
+    border: 1px solid rgba(140, 144, 241, 0.2);
+    border-radius: 10px;
+    height: 154px;
+    width: 100%;
+    padding: 34px;
+    position: relative;
+    &-name {
+        color: rgb(28, 28, 28);
+        font-family: Rubik;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 22px;
+    }
+    &-text {
+        color: rgb(28, 28, 28);
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: 0%;
+        text-align: left;
+        width: 736px;
+    }
+    &-read {
+        position: absolute;
+        right: 0;
+        display: flex;
+        border: 1px solid rgb(200, 238, 255),rgba(140, 144, 241, 0.2),;
+        border-radius: 10px;
+        height: 100%;
+        width: 270px;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        background: rgb(77, 83, 232);
+        color: rgb(255, 255, 255);
+        font-family: Rubik;
+        font-size: 22px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}

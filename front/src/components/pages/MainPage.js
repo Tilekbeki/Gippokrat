@@ -7,6 +7,10 @@ import VideoBlock from "../landingBlocks/videoBlock/VideoBlock";
 import GalleryBlock from "../landingBlocks/galleryBlock/GalleryBlock";
 import EmployeesBlock from "../landingBlocks/employeesBlock/EmployeesBlock";
 import ReviewsBlock from "../landingBlocks/reviewsBlock/ReviewsBlock";
+import FormBlock from "../landingBlocks/formBlock/FormBlock";
+import LastNewsBlock from "../landingBlocks/lastNewsBlock/LastNewsBlock";
+import LocationBlock from "../landingBlocks/locationBlock/LocationBlock";
+import Footer from "../footer/Footer";
 
 const MainPage = () => {
     return(
@@ -20,7 +24,9 @@ const MainPage = () => {
             <GalleryBlock/>
             <EmployeesBlock/>
             <ReviewsBlock/>
-            <h1>Main Page</h1>
+            <LastNewsBlock/>
+            <LocationBlock/>
+            <Footer/>
         </>
     )
 }

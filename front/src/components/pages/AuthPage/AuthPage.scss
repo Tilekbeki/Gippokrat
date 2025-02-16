@@ -1,0 +1,76 @@
+body {
+    background: rgb(244, 244, 244);
+}
+.auth {
+    position: relative;
+    padding: 40px 0;
+    &-Illustration {
+        position: absolute;
+        background: url('../../../resources/img/auth-Illustration.png');
+        width: 640px;
+        height: 640px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 56%;
+    }
+    &-block {
+        border-radius: 8px;
+        position: relative;
+        display: inline-block;
+        padding: 44px 56px;
+        width: 788px;
+        margin: 0 0 0 45%;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08);
+        background: rgb(255, 255, 255);
+        z-index: 2;
+        h1 {
+            font-family: 'Rubik';
+            font-size: 46px;
+            line-height: 135.5%;
+            letter-spacing: 0%;
+            
+            font-weight: 400;
+            span {
+                color: rgb(99, 88, 220);
+                
+            font-weight: 900;
+            }
+        }
+    }
+    &-form {
+        padding: 108px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        &__login,&__password {
+            border-radius: 8px;
+            padding: 36px 22px 18px 22px;
+            background: rgb(236, 236, 236);
+            color: rgb(47, 47, 47);
+            font-family: 'Rubik';
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 135.5%;
+            letter-spacing: 0%;
+            text-align: left;
+            height: 77px;
+            width: 100%;
+            border: none;
+        }
+        &__button {
+            margin-top: 106px;
+            border-radius: 8px;
+            background: rgb(99, 88, 220);
+            width: 671px;
+            height: 77px;
+            color: rgb(255, 255, 255);
+            font-family: 'Rubik';
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+

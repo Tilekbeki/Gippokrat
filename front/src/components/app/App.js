@@ -1,8 +1,8 @@
 import './App.scss';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainPage from '../pages/MainPage';
-import AuthPage from '../pages/AuthPage';
-
+import AuthPage from '../pages/AuthPage/AuthPage';
+import AdminPage from '../pages/AdminPage';
 // const Page404 = lazy(() => import('../pages/404'));
 // const MainPage = lazy(() => import('../pages/MainPage'));
 // const ComicsPage = lazy(() => import('../pages/ComicsPage'));
@@ -18,6 +18,7 @@ function App() {
                         <Routes>
                             <Route path="/" element={<MainPage/>} />
                             <Route path='/login' element={<AuthPage/>}/>
+                            <Route path='/admin' element={<AdminPage/>} />
                         </Routes>
                 </main>
             </div>
