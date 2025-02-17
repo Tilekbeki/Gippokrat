@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GippokratApplicationTests {
+class mainClassTests {
 
 	@Test
 	void contextLoads() {

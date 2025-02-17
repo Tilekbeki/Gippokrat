@@ -21,16 +21,14 @@ public class UserServiceDB {
         return userRepository.findAll();
     }
 
-    // Метод для добавления пользователя
-    public User addUser(User user) {
-        return userRepository.save(user);
-    }
 
     // Метод для удаления пользователя
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
     }
 
+
+    //Метод добавления пользователя
     public Boolean createUser(String email, String password){
         //Проверяем, существует ли пользователь
         if(userRepository.findByEmail(email)!= null){

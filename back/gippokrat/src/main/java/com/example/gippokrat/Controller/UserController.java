@@ -23,11 +23,13 @@ public class UserController {
     private UserRepository userRepository;
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
+    //Получение пользователей
     @GetMapping("/users")
     public List<User> findAllUsers(){
         return dbFunctions.getAllUsers();
     }
 
+    //Создание пользователя
     @PostMapping("/register")
     public ResponseEntity<String>  registerUser(@RequestBody UserRegistrationRequest request){
         boolean check = dbFunctions.createUser(request.getUsername(), request.getPassword());
@@ -39,12 +41,13 @@ public class UserController {
         }
     }
 
+    //Авторизация пользователя
     @PostMapping("/login")
     public ResponseEntity<?> loginUser(@RequestBody UserRegistrationRequest request){
         User user = new User();
         //Выполняем поиск пользователя в базе по email
         user = userRepository.findByEmail(request.getUsername());
-        if (user == null) {
+        if (user.getEmail() == null) {
 
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Email не найден");
         }
@@ -61,7 +64,18 @@ public class UserController {
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Неверный пароль");
             }
         }
+    }
 
+    //Удаление пользователя
+    @PutMapping("/delete")
+    public ResponseEntity<?> deleteUser(@RequestBody String jwt){
+        String email = JwtFunctions.validateToken(jwt);
+        try {
+            userRepository.findByEmail(email);
+            return ResponseEntity.ok(jwt);
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }
     }
 
 }
