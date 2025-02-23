@@ -1,0 +1,86 @@
+.side-panel {
+    padding: 28px 20px;
+    background-color: #fff;
+    display: inline;
+    position: absolute;
+    height: 100vh;
+    overflow: scroll;
+    &__menu {
+        &-block {
+            padding: 30px 0 30px 26px;
+            position: relative;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            color: rgb(63, 68, 85);
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: left;
+            a {
+                padding: 8px 14px;
+                display: block;
+                text-decoration: none;
+                /* Body 14 Regular */
+                color: rgb(63, 68, 85);
+                font-family: Rubik;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+            &::before {
+                content: "";
+                height: 1px;
+                width: 196px;
+                position: absolute;
+                background: rgb(243, 245, 252);
+                bottom: 0;
+            }
+        }
+    }
+    &__btn {
+        border-radius: 8px;
+        background: rgb(99, 88, 220);
+        padding: 10px 20px;
+        margin-left: 26px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: left;
+        transition: 0.5s all;
+        &:hover {
+            background: rgb(157, 149, 252);
+        }
+    }
+    
+}
+
+
+.maincontent {
+    background: #fff;
+    
+}
+
+.admin-container {
+    .container {
+        margin: 0 20px 0 22%;
+    }
+}
+
+.active {
+    background: rgb(243, 245, 252);
+    color: white;
+    border-radius: 8px;
+  }
+  
